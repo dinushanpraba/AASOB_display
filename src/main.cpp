@@ -376,6 +376,7 @@ extern "C" void action_save_speed_settings(lv_event_t *e)
 extern "C" void action_reset_daily_count_lbl(lv_event_t *e)
 {
   TotalCount = 0;
+  Serial.println("Reset Total Count Pressed..");
 
   lv_label_set_text(objects.current_count_lbl, String(TotalCount).c_str());
 }
