@@ -378,7 +378,7 @@ extern "C" void action_reset_daily_count_lbl(lv_event_t *e)
   TotalCount = 0;
   Serial.println("Reset Total Count Pressed..");
 
-  lv_label_set_text(objects.current_count_lbl, String(TotalCount).c_str());
+  lv_label_set_text(objects.daily_count_lbl, String(TotalCount).c_str());
 }
 extern "C" void action_unlock_btn_fn(lv_event_t *e)
 {
